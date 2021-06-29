@@ -66,7 +66,21 @@ function averageNumbers(array) {
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(words){
+  let index = 0;
+  let letterCounter = 0;
+  if (!words.length) {
+    return null;
+  }
+  for(let i = 0; i < words.length; i++){
+    index= words[i];
+    letterCounter += index.length
+
+  }
+  return letterCount / words.length
+}
+
+
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -102,16 +116,8 @@ return newArray;
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist(arrayOfWords) {
-  let newArray = []
-  for (let word of arrayofWords){
-    if (if newArray.includes(word)){
-      return true;
-    } else {
-      return false;
-    }
-  }
-  return newArray;
+function doesWordExist (words, index){
+  return words.includes(index)
 }
 
 
